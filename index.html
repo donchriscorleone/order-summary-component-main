@@ -9,6 +9,10 @@
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -16,22 +20,43 @@
 </head>
 <body>
 
-  Order Summary
+  <main class="container">
+    <div class="card">
+      <div class="upper-image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">
+          <h1>Order Summary</h1>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+          </p>
+        </div>
+        <div class="card-plan">
+          <div class="plan-title">
+            <img src="./images/icon-music.svg" alt="My Happy SVG"/>
+            <div class="text-container">
+              <h4>Annual Plan</h4>
+              <p>$59.99/year</p>
+            </div>
+          </div>
+          <div class="plan-action">
+            <a href="#">Change</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <button class="btn-proceed">Proceed to Payment</button>
+        <br>
+        <button class="btn-cancel">Cancel Order</button>
+      </div>
+    </div>
+  </main>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  <!-- <img src="images/illustration-hero.svg" /> -->
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Christopher II Lajom</a>.
+  </div> -->
 </body>
 </html>

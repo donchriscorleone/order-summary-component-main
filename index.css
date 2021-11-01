@@ -1,0 +1,144 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --v-pale-blue: hsl(225, 100%, 98%);
+    --d-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+   font-size: 16px;
+   font-family: 'Red Hat Display', sans-serif;
+   background-color: var(--pale-blue);
+   background-image: url('./images/pattern-background-desktop.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container {
+    width: 380px;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+    /* box-shadow: 10px 5px 5px #747479; */
+    background-color: var(--v-pale-blue);
+    text-align: center;
+}
+
+.upper-image {
+    background-image: url('./images/illustration-hero.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 200px;
+}
+
+.card-content {
+    margin-top: 30px;
+}
+
+.card-content, .card-actions {
+    font-size: .8rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.card-title h1 {
+    font-weight: 900;
+}
+
+.card-title p {
+    color: var(--d-blue);
+    width: 70%;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.card-plan {
+    background-color: var(--pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.plan-title {
+    display: flex;
+}
+
+.card-plan h4 {
+    margin-bottom: 0;
+}
+.card-plan p {
+    color: var(--d-blue);
+    margin-top: 0;
+}
+
+.plan-action {
+    margin-right: 10px;
+}
+
+.card-actions {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.card-actions .btn-proceed {
+    background-color: var(--bright-blue);
+    width: 100%;
+    border-radius: 10px;
+    height: 40px;
+    border: none;
+    color: var(--pale-blue);
+    font-weight: 700;
+}
+
+.card-actions button {
+    cursor: pointer;
+}
+
+.card-actions .btn-cancel {
+    outline: none;
+    border: none;
+    margin-top: 30px;
+    color: var(--d-blue);
+    background-color: var(--v-pale-blue);
+    font-weight: 900;
+}
+
+.plan-action a:hover {
+    color: var(--d-blue);
+}
+
+.btn-cancel:hover {
+    color: black;
+}
+
+@media screen and (max-width: 376px) {
+
+    .container {
+        height: 60%;
+        width: 340px;
+    }
+
+    .card-title p {
+        color: var(--d-blue);
+        width: 220px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+}
